@@ -6,7 +6,7 @@
   margin: 1rem 0;
   padding: 1em;
   border-radius: 0.28571429rem;
-  border: 1px solid var(--color-secondary);
+  border: 1px solid var(--color-border);
   background: var(--color-box-body);
   color: var(--color-text);
 }
@@ -30,7 +30,7 @@
   flex-direction: column;
   position: relative;
   margin: 1rem 0;
-  border: 1px solid var(--color-secondary);
+  border: 1px solid var(--color-border);
   border-radius: 0.28571429rem;
   background: var(--color-box-body);
   color: var(--color-text);
@@ -50,7 +50,7 @@
   width: auto;
   box-shadow: none;
   border: none;
-  border-top: 1px solid var(--color-secondary);
+  border-top: 1px solid var(--color-border);
 }
 .ui.segments:not(.horizontal) > .segment:first-child {
   top: 0;
@@ -75,7 +75,7 @@
 }
 
 .ui.segments > .ui.segments {
-  border-top: 1px solid var(--color-secondary);
+  border-top: 1px solid var(--color-border);
   margin: 1rem;
 }
 .ui.segments > .segments:first-child {
@@ -92,7 +92,7 @@
   padding: 0;
   margin: 1rem 0;
   border-radius: 0.28571429rem;
-  border: 1px solid var(--color-secondary);
+  border: 1px solid var(--color-border);
 }
 
 .ui.horizontal.segments > .segment {
@@ -101,7 +101,7 @@
   border-radius: 0;
   border: none;
   box-shadow: none;
-  border-left: 1px solid var(--color-secondary);
+  border-left: 1px solid var(--color-border);
 }
 
 .ui.segments > .horizontal.segments:first-child {
@@ -136,7 +136,7 @@
   width: calc(100% + 2px);
   max-width: calc(100% + 2px);
   box-shadow: none;
-  border: 1px solid var(--color-secondary);
+  border: 1px solid var(--color-border);
   background: var(--color-box-body);
   color: var(--color-text);
 }

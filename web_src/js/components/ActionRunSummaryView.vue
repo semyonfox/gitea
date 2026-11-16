@@ -139,7 +139,7 @@ onBeforeUnmount(() => {
   flex-wrap: wrap;
   align-items: stretch; /* equal-height columns so labels align at top and values at bottom */
   padding: 12px 16px;
-  border-bottom: 1px solid var(--color-secondary);
+  border-bottom: 1px solid var(--color-border);
   background: var(--color-console-bg);
 }
 
@@ -224,7 +224,7 @@ onBeforeUnmount(() => {
   display: none;
   flex: 0 0 100%;
   margin: 8px 0;
-  border-bottom: 1px solid var(--color-secondary);
+  border-bottom: 1px solid var(--color-border);
 }
 
 .action-run-summary-stat-value {

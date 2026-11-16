@@ -77,7 +77,7 @@ const onItemClick = (e: MouseEvent) => {
   flex-direction: column;
   gap: 1px;
   margin-left: 14px;
-  border-left: 1px solid var(--color-secondary);
+  border-left: 1px solid var(--color-border);
 }
 
 .tree-item.selected {

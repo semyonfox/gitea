@@ -310,7 +310,7 @@ function commitClickedShift(commit: Commit) {
 
   .ui.dropdown.diff-commit-selector .menu > .item:not(:first-child),
   .ui.dropdown.diff-commit-selector .menu > .info:not(:first-child) {
-    border-top: 1px solid var(--color-secondary) !important;
+    border-top: 1px solid var(--color-border) !important;
   }
 
   .ui.dropdown.diff-commit-selector .menu > .item:focus {

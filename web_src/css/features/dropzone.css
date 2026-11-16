@@ -1,5 +1,5 @@
 .ui .field .dropzone {
-  border: 2px dashed var(--color-secondary);
+  border: 2px dashed var(--color-border);
   background: none;
   box-shadow: none;
   padding: 0;

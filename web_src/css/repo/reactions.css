@@ -45,6 +45,7 @@
   display: grid !important;
   grid-template-columns: repeat(4, 1fr);
   padding: 4px;
+  border-radius: calc(var(--border-radius) + 4px + 1px); /* item radius + padding + border, so the corners stay concentric */
 }
 
 .ui.dropdown.select-reaction .menu > .item {

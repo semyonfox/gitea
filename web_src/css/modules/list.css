@@ -153,7 +153,7 @@
 }
 
 .ui.divided.list > .item {
-  border-top: 1px solid var(--color-secondary);
+  border-top: 1px solid var(--color-border);
 }
 .ui.divided.list .list > .item {
   border-top: none;

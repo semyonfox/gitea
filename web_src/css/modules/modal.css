@@ -51,7 +51,7 @@
   padding: 1.25rem 1.5rem;
   box-shadow: none;
   color: var(--color-text-dark);
-  border-bottom: 1px solid var(--color-secondary);
+  border-bottom: 1px solid var(--color-border);
   border-top-left-radius: var(--border-radius);
   border-top-right-radius: var(--border-radius);
 }
@@ -83,7 +83,7 @@
 .ui.modal .content + form > .actions {
   background: var(--color-secondary-bg);
   padding: 1rem;
-  border-top: 1px solid var(--color-secondary);
+  border-top: 1px solid var(--color-border);
   text-align: right;
   border-radius: 0 0 var(--border-radius) var(--border-radius);
 }

@@ -415,7 +415,7 @@ onBeforeUnmount(() => {
 
   /* about 12px top padding + 12px bottom padding + 37px footer height,
   TODO: need to use JS to calculate the height for better scrolling experience*/
-  max-height: calc(100vh - 62px);
+  max-height: calc(100dvh - 62px);
 
   overflow-y: auto;
   background: var(--color-body);

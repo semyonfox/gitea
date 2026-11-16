@@ -5,7 +5,7 @@
   align-items: stretch;
   border-radius: var(--border-radius);
   padding: 8px 10px;
-  border: 1px solid var(--color-secondary);
+  border: 1px solid var(--color-border);
   background: var(--color-card);
   color: var(--color-text); /* it can't inherit from parent because the card already has its own background */
 }

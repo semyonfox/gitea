@@ -187,7 +187,7 @@ watch([searchQuery, filteredFiles], async () => {
 .file-search-popup {
   position: absolute;
   background: var(--color-box-body);
-  border: 1px solid var(--color-secondary);
+  border: 1px solid var(--color-border);
   border-radius: var(--border-radius);
   width: max-content;
   max-height: min(calc(100vw - 20px), 300px);
@@ -204,7 +204,7 @@ watch([searchQuery, filteredFiles], async () => {
   align-items: flex-start;
   padding: 0.5rem 0.75rem;
   cursor: pointer;
-  border-bottom: 1px solid var(--color-secondary);
+  border-bottom: 1px solid var(--color-border);
 }
 
 .file-search-results .item:last-child {

@@ -55,7 +55,7 @@
 .code-editor-container .cm-panels {
   background-color: var(--color-body);
   color: var(--color-text);
-  border-color: var(--color-secondary);
+  border-color: var(--color-border);
   font-family: var(--fonts-regular);
   font-size: 13px;
 }
@@ -212,7 +212,7 @@
 .code-editor-container .cm-tooltip {
   background-color: var(--color-body);
   color: var(--color-text);
-  border-color: var(--color-secondary);
+  border-color: var(--color-border);
 }
 
 .code-editor-container .cm-tooltip.cm-tooltip-autocomplete > ul > li {
@@ -249,7 +249,7 @@
   background-image: none;
   background-color: var(--color-button);
   color: var(--color-text);
-  border: 1px solid var(--color-secondary);
+  border: 1px solid var(--color-border);
   border-radius: var(--border-radius);
   height: 28px;
   padding: 0 10px;
@@ -300,11 +300,11 @@
 }
 
 .code-editor-container .cm-panels-top {
-  border-bottom-color: var(--color-secondary);
+  border-bottom-color: var(--color-border);
 }
 
 .code-editor-container .cm-panels-bottom {
-  border-top-color: var(--color-secondary);
+  border-top-color: var(--color-border);
   border-radius: 0 0 var(--border-radius) var(--border-radius);
 }
 
@@ -317,7 +317,7 @@
 }
 
 .code-editor-container .cm-tooltip.cm-tooltip-autocomplete > ul > completion-section {
-  border-bottom-color: var(--color-secondary);
+  border-bottom-color: var(--color-border);
 }
 
 .code-editor-container .cm-tooltip-autocomplete-disabled ul li[aria-selected] {
@@ -335,7 +335,7 @@
   width: 400px;
   max-width: min(calc(100% - 16px), 90vw);
   background-color: var(--color-body);
-  border: 1px solid var(--color-secondary);
+  border: 1px solid var(--color-border);
   border-radius: 0 0 var(--border-radius) var(--border-radius);
   box-shadow: 0 4px 12px var(--color-shadow);
   font-family: var(--fonts-regular);
@@ -351,7 +351,7 @@
   width: 100%;
   box-sizing: border-box;
   padding: 4px 6px !important;
-  border: 1px solid var(--color-secondary);
+  border: 1px solid var(--color-border);
   border-radius: var(--border-radius);
   background-color: var(--color-input-background);
   color: var(--color-input-text);
@@ -459,7 +459,7 @@
 .code-editor-container .cm-tooltip-lint {
   background-color: var(--color-body);
   color: var(--color-text);
-  border-color: var(--color-secondary);
+  border-color: var(--color-border);
 }
 
 .code-editor-container .cm-panel.cm-panel-lint button[name="close"] {
@@ -547,6 +547,6 @@
 }
 
 .cm-context-menu-separator {
-  border-top: 1px solid var(--color-secondary);
+  border-top: 1px solid var(--color-border);
   margin: 4px 0;
 }

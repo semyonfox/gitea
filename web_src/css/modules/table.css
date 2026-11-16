@@ -4,14 +4,14 @@
 .ui.table {
   width: 100%;
   margin: 1em 0;
-  border: 1px solid var(--color-secondary);
+  border: 1px solid var(--color-border);
   border-radius: 0.28571429rem;
   vertical-align: middle;
   border-collapse: separate;
   border-spacing: 0;
   color: var(--color-text);
   background: var(--color-box-body);
-  border-color: var(--color-secondary);
+  border-color: var(--color-border);
   text-align: start;
 }
 
@@ -34,7 +34,7 @@
   padding: 6px 5px;
   vertical-align: inherit;
   font-weight: var(--font-weight-normal);
-  border-bottom: 1px solid var(--color-secondary);
+  border-bottom: 1px solid var(--color-border);
   border-left: none;
 }
 .ui.table > thead > tr > th:first-child {
@@ -52,7 +52,7 @@
 
 .ui.table > tfoot > tr > th,
 .ui.table > tfoot > tr > td {
-  border-top: 1px solid var(--color-secondary);
+  border-top: 1px solid var(--color-border);
   background: var(--color-box-body);
   text-align: inherit;
   color: var(--color-text);
@@ -174,7 +174,7 @@
   margin: 0 -1px;
   width: calc(100% + 2px);
   max-width: calc(100% + 2px);
-  border: 1px solid var(--color-secondary);
+  border: 1px solid var(--color-border);
 }
 .ui.attached + .ui.attached.table:not(.top) {
   border-top: none;
@@ -236,7 +236,7 @@
 
 .ui.basic.table {
   background: transparent;
-  border: 1px solid var(--color-secondary);
+  border: 1px solid var(--color-border);
 }
 .ui.basic.table > thead > tr > th,
 .ui.basic.table > tbody > tr > th,
@@ -246,7 +246,7 @@
   border-left: none;
 }
 .ui.basic.table > tbody > tr {
-  border-bottom: 1px solid var(--color-secondary);
+  border-bottom: 1px solid var(--color-border);
 }
 .ui.basic.table > tbody > tr > td,
 .ui.basic.table > tfoot > tr > td,

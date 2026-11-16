@@ -67,7 +67,7 @@ a:hover {
   flex-direction: column;
   gap: 1px;
   margin-left: 13px;
-  border-left: 1px solid var(--color-secondary);
+  border-left: 1px solid var(--color-border);
 }
 
 .sub-items .item-file {

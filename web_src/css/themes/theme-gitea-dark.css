@@ -226,6 +226,8 @@ gitea-theme-meta-info {
   --color-input-border: var(--color-secondary-dark-1);
   --color-light: #0b0b0c28;
   --color-light-border: #f3f3f428;
+  --color-border: oklch(83.9% 0.032 268 / 0.24); /* same as --color-secondary on --color-box-body */
+  --color-raised: oklch(27.2% 0.006 258); /* popups sit lighter than --color-body, dark mode depth comes from surfaces not shadows */
   --color-hover: #f3f3f419;
   --color-hover-opaque: #232528; /* TODO: color-mix(in srgb, var(--color-body), var(--color-hover)); */
   --color-active: #f3f3f424;

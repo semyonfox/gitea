@@ -19,11 +19,11 @@
   min-width: max-content;
   margin: 0;
   padding: 0;
-  background: var(--color-menu);
+  background: var(--color-raised);
   font-size: 1em;
   text-align: left;
   box-shadow: 0 6px 18px var(--color-shadow);
-  border: 1px solid var(--color-secondary);
+  border: 1px solid var(--color-border);
   border-radius: 0.28571429rem;
   z-index: 11;
   left: 0;
@@ -97,7 +97,7 @@
 }
 
 .ui.dropdown .menu > .divider {
-  border-top: 1px solid var(--color-secondary);
+  border-top: 1px solid var(--color-border);
   height: 0;
   margin: 4px 0;
 }
@@ -256,7 +256,7 @@ select.ui.dropdown {
 }
 
 .ui.selection.dropdown .menu > .item {
-  border-top: 1px solid var(--color-secondary);
+  border-top: 1px solid var(--color-border);
   padding: 0.78571429rem 1.14285714rem !important;
   white-space: normal;
   overflow-wrap: normal;
@@ -445,7 +445,7 @@ select.ui.dropdown {
   font-size: 1em;
   padding: 0.35714286em 0.78571429em;
   margin: 0.14285714rem 0.28571429rem 0.14285714rem 0;
-  box-shadow: 0 0 0 1px var(--color-secondary) inset;
+  box-shadow: 0 0 0 1px var(--color-border) inset;
 }
 
 .ui.multiple.dropdown > .label img {
@@ -551,7 +551,7 @@ select.ui.dropdown {
   width: 1.28571429em;
   height: 1.28571429em;
   border-radius: 500rem;
-  border: 0.2em solid var(--color-secondary);
+  border: 0.2em solid var(--color-border);
 }
 
 .ui.loading.dropdown > i.icon::after {
@@ -671,8 +671,8 @@ select.ui.dropdown {
   margin: 0 !important;
   min-width: 100% !important;
   width: auto !important;
-  border-top: 1px solid var(--color-secondary);
-  border-color: var(--color-secondary);
+  border-top: 1px solid var(--color-border);
+  border-color: var(--color-border);
   border-radius: 0 0 var(--border-radius) var(--border-radius) !important;
 }
 
@@ -763,8 +763,8 @@ select.ui.dropdown {
   transform: rotate(45deg);
   width: 0.5em;
   height: 0.5em;
-  box-shadow: -1px -1px 0 0 var(--color-secondary);
-  background: var(--color-menu);
+  box-shadow: -1px -1px 0 0 var(--color-border);
+  background: var(--color-raised);
   z-index: 2;
   top: -0.25em;
   left: 50%;
@@ -917,7 +917,7 @@ select.ui.dropdown {
 .ui.dropdown .menu.context-user-switch .scrolling.menu {
   border-radius: 0 !important;
   box-shadow: none !important;
-  border-bottom: 1px solid var(--color-secondary);
+  border-bottom: 1px solid var(--color-border);
   max-width: 80vw;
 }
 

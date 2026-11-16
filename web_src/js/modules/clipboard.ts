@@ -42,9 +42,9 @@ export async function copyToClipboardWithFeedback(target: HTMLElement, content: 
 
   // show feedback
   if (feedbackSvg) {
-    const restore = replaceWithFeedbackSvg(feedbackSvg, success);
+    const restore = await replaceWithFeedbackSvg(feedbackSvg, success);
     await sleep(1000);
-    restore();
+    await restore();
   } else {
     showTemporaryTooltip(target, success ? copy_success : copy_error);
   }
@@ -52,14 +52,29 @@ export async function copyToClipboardWithFeedback(target: HTMLElement, content: 
   pendingFeedback.delete(target);
 }
 
-function replaceWithFeedbackSvg(origSvg: SVGElement, success: boolean): () => void {
+// blur the outgoing icon out and the incoming one in, so the swap reads as one icon changing
+async function swapIcon(from: Element, to: Element) {
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    from.replaceWith(to);
+    return;
+  }
+  const blurred = {filter: 'blur(4px)', opacity: 0};
+  const clear = {filter: 'blur(0)', opacity: 1};
+  const out = from.animate([clear, blurred], {duration: 100, easing: 'ease-in', fill: 'forwards'});
+  await out.finished;
+  from.replaceWith(to);
+  out.cancel();
+  to.animate([blurred, clear], {duration: 150, easing: 'ease-out'});
+}
+
+async function replaceWithFeedbackSvg(origSvg: SVGElement, success: boolean): Promise<() => Promise<void>> {
   const size = Number(origSvg.getAttribute('width')!);
   const {icon, color} = success ?
     {icon: 'octicon-check', color: 'tw-text-green'} as const :
     {icon: 'octicon-x', color: 'tw-text-red'} as const;
   const newSvg = createElementFromHTML<SVGElement>(svg(icon, size, color));
-  origSvg.replaceWith(newSvg);
-  return () => newSvg.replaceWith(origSvg);
+  await swapIcon(origSvg, newSvg);
+  return () => swapIcon(newSvg, origSvg);
 }
 
 // Enable clipboard copy from HTML attributes. These properties are supported:

@@ -16,9 +16,9 @@
 
 .tippy-box {
   position: relative;
-  background-color: var(--color-menu);
+  background-color: var(--color-raised);
   color: var(--color-text);
-  border: 1px solid var(--color-secondary);
+  border: 1px solid var(--color-border);
   border-radius: var(--border-radius);
   font-size: 1rem;
 }
@@ -63,7 +63,7 @@
 /* menu theme for .ui.menu */
 
 .tippy-box[data-theme="menu"] {
-  background-color: var(--color-menu);
+  background-color: var(--color-raised);
   color: var(--color-text);
   box-shadow: 0 6px 18px var(--color-shadow);
 }
@@ -73,7 +73,7 @@
 }
 
 .tippy-box[data-theme="menu"] .tippy-svg-arrow-inner {
-  fill: var(--color-menu);
+  fill: var(--color-raised);
 }
 
 .tippy-box[data-theme="menu"] .item {
@@ -107,7 +107,7 @@
 
 .tippy-box[data-theme="box-with-header"] .tippy-content {
   background: var(--color-box-body);
-  border-radius: var(--border-radius);
+  border-radius: calc(var(--border-radius) - 1px); /* sits inside the box's 1px border */
   padding: 0;
 }
 
@@ -175,5 +175,5 @@
 }
 
 .tippy-svg-arrow-inner {
-  fill: var(--color-menu);
+  fill: var(--color-raised);
 }

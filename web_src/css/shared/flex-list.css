@@ -31,7 +31,7 @@
 }
 
 .flex-divided-list > .item + .item {
-  border-top: 1px solid var(--color-secondary);
+  border-top: 1px solid var(--color-border);
 }
 
 .items-with-main > .item {

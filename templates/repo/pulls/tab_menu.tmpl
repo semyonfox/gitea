@@ -1,5 +1,5 @@
 <div class="ui pull tabs container">
-	<div class="ui top attached pull tabular menu">
+	<div class="ui secondary pointing pull menu scroll-fade-x">
 		<a class="item {{if .PageIsPullConversation}}active{{end}}" href="{{.Issue.Link}}">
 			{{svg "octicon-comment-discussion"}}
 			{{template "shared/misc/tabtitle" (ctx.Locale.Tr "repo.pulls.tab_conversation")}}
@@ -19,5 +19,4 @@
 			{{template "repo/diff/stats" dict "Addition" .DiffShortStat.TotalAddition "Deletion" .DiffShortStat.TotalDeletion "Classes" "tw-ml-auto tw-pl-3 tw-font-semibold"}}
 		{{end}}
 	</div>
-	<div class="ui tabs divider"></div>
 </div>

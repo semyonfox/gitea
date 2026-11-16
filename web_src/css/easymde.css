@@ -409,7 +409,7 @@
   overflow: auto;
   display: none;
   box-sizing: border-box;
-  border: 1px solid var(--color-secondary);
+  border: 1px solid var(--color-border);
   overflow-wrap: break-word;
 }
 
@@ -437,7 +437,7 @@
 
 .EasyMDEContainer .editor-preview table td,
 .EasyMDEContainer .editor-preview table th {
-  border: 1px solid var(--color-secondary);
+  border: 1px solid var(--color-border);
   padding: 5px;
 }
 

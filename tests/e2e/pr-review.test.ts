@@ -28,7 +28,7 @@ test('pr review flow', async ({page, request}) => {
   await expect(fileBox.locator('tr.add-code')).toHaveCount(1);
 
   // commits tab badge reflects the single PR commit, and the diff stats header counts one changed file
-  const commitsTab = page.locator('.ui.pull.tabular.menu a.item', {has: page.locator('.octicon-git-commit')});
+  const commitsTab = page.locator('.ui.pull.menu a.item', {has: page.locator('.octicon-git-commit')});
   await expect(commitsTab.locator('.label')).toHaveText('1');
   await expect(page.locator('.diff-detail-stats')).toContainText(/1 changed file/);
 

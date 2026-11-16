@@ -58,3 +58,42 @@ Gitea's private styles use `g-` prefix.
 .tab-size-14 { tab-size: 14 !important; }
 .tab-size-15 { tab-size: 15 !important; }
 .tab-size-16 { tab-size: 16 !important; }
+
+/* fade a horizontal scroller's edges, only on the sides that have more to scroll to */
+@property --scroll-fade-start {
+  syntax: "<percentage>";
+  inherits: false;
+  initial-value: 0%;
+}
+
+@property --scroll-fade-end {
+  syntax: "<percentage>";
+  inherits: false;
+  initial-value: 0%;
+}
+
+.scroll-fade-x {
+  mask-image: linear-gradient(to right, transparent, black var(--scroll-fade-start) calc(100% - var(--scroll-fade-end)), transparent);
+}
+
+@supports (animation-timeline: scroll()) {
+  .scroll-fade-x {
+    animation: scroll-fade-x linear both;
+    animation-timeline: scroll(self inline); /* inactive when nothing overflows, so no fade at all */
+  }
+}
+
+@keyframes scroll-fade-x {
+  0% {
+    --scroll-fade-start: 0%;
+    --scroll-fade-end: 15%;
+  }
+  10%, 90% {
+    --scroll-fade-start: 15%;
+    --scroll-fade-end: 15%;
+  }
+  100% {
+    --scroll-fade-start: 15%;
+    --scroll-fade-end: 0%;
+  }
+}
